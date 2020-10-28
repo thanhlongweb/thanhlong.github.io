@@ -1,0 +1,72 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.main-slider.owl-carousel .owl-nav button {
+  height: 50px;
+  width: 50px;
+  background: rgba(17, 17, 17, 0.5);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  margin-top: -15px;
+}
+.main-slider.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: 30px;
+}
+.categories-slider.owl-carousel .owl-nav button.owl-prev {
+  font-size: 36px;
+  color: #888;
+  position: absolute;
+  left: -60px;
+  top: 35%;
+}
+.categories-slider.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: -60px;
+}
+.icon:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -48px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f08632;
+  border-color: transparent #f08632 #f08632 transparent;
+  content: "";
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  opacity: 0;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.icon:hover {
+  background: #f08632;
+}
+.icon:hover:after {
+  opacity: 1;
+}
+.icon:hover span {
+  color: #ffffff;
+}
+.icon:hover h5 {
+  color: #ffffff;
+}
+.icon span {
+  color: #f08632;
+  -webkit-transition: all, 0.2s;
+  -o-transition: all, 0.2s;
+  transition: all, 0.2s;
+}
